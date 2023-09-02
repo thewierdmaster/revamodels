@@ -2,3 +2,5 @@ flask
 numpy
 ultralytics
 gunicorn
+onnx
+onnxruntime
