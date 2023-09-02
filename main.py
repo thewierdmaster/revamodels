@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = YOLO("models/yolo_v8.onnx")
 
 def yolo_v8(image_path):
-    results = model(source=image_path)
+    results = model(source=image_path, task="detect")
     boxes = []
     for result in results:
         boxes = result.boxes.xyxy
